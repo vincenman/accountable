@@ -1,2 +1,49 @@
+Claude.md
+## Preferences
+
+- Keep communication down-to-earth; avoid overly profound language, avoid "It's not X it's Y" constructs
+- With UI, avoid overuse of gradients, avoid thin borders on one edge
+- Identify root cause before fixing issues. Prove with evidence, then fix.
+- Use `uv` as Python package manager. Always `uv run xxx` never `python3 xxx`, always `uv add xxx` never `pip install xxx`
+- Never use emojis in code or in print statements or logging
+- Keep README.md concise
+
+.claude/
+    settings.json
+    settings.local.json
+    skills/
+.mcp.json
+AGENTS.md
+
+claude mcp add -s project playwright -- npx @playwright/mcp@latest
+
+
 git checkout -b mvp
 Read docs/intent.md and interview me about anything unclear or missing : scope , users,. constraints and what success looks like. Then update intent.md with my answers.
+
+Read docs/intent.md and write docs/spec.md with 
+the requirements and the design for the MVP.
+ Use the brand skill. List three html mockup.
+
+ 
+ Read docs/intent.md and docs/spec.md and write docs/plan.md with four sections: 
+ Files that change, Orde rof work, Risk and Proof. Order the work in phases. Proof list the unit and end-to-end tests. Dont write any code yet.
+
+ 
+ Build the MVP
+ Implement docs/plan.md . following its order of work. Write the tests in its Proof
+ section and run them as you  go. Leave the commits to me.
+
+git commit -m "Built the MVP"
+
+Test
+Start the app, use playwright to compare it with the chosen mockup, 
+and fix any material or unexpected differences. And show me the scrren show
+
+git commit -m "Test: check command"
+
+
+REVIEW
+Review this branch against main with docs/REVIEW.md . Report only , skip style.
+
+

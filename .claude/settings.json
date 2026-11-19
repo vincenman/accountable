@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp_computer_use_hold_key",
+      "mcp_computer_use_left_click",
+      "mcp_computer_use_key"
+    ]
+  }
+}

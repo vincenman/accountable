@@ -1,0 +1,2 @@
+git checkout -b mvp
+Read docs/intent.md and interview me about anything unclear or missing : scope , users,. constraints and what success looks like. Then update intent.md with my answers.

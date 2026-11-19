@@ -29,11 +29,17 @@ From any contact or deal you can log an activity (a note, call or email) and giv
 
 ### Sample data
 
-Accountable comes with realistic sample data, so every screen looks alive the first time it starts: organizations across several industries, contacts at every status, deals at every stage (including deals won and lost over the past months, deals expected to close in the months ahead and a few running late), and activities with some follow-ups due soon and some overdue.
+Accountable comes with realistic sample data, so every screen looks alive the first time it starts: organizations across several industries (technology, manufacturing, retail, professional services, healthcare), contacts at every status, deals at every stage (including deals won and lost over the past months, deals expected to close in the months ahead and a few running late), and activities with some follow-ups due soon and some overdue. Sample data should include approximately:
+- 20-30 organizations
+- 50-80 contacts
+- 30-40 deals across all stages
+- Activities distributed across contacts and deals to show realistic timelines
 
 ### Look and feel
 
-The look follows Accountable's brand guidelines, which take priority over any general design guidance. The MVP is light mode, designed for a laptop or desktop screen.
+The look follows Accountable's brand guidelines in `docs/BRAND.md`, which take priority over any general design guidance. The MVP is light mode, designed for a laptop or desktop screen.
+
+**Dashboard visual style**: Clean and modern like contemporary SaaS products (Linear, Notion), not cluttered or corporate. Professional use of the brand colors (Sea Green, Marigold, Coral). Charts should be clear and readable, using the brand colors for different series. The "visually stunning" goal means: well-designed data visualizations that make the business state immediately clear, generous white space, smooth interactions, and a layout that feels intentional and polished.
 
 ## Affected users and systems
 
@@ -46,6 +52,12 @@ The look follows Accountable's brand guidelines, which take priority over any ge
 - It runs locally with one documented command that works on Mac, Linux and Windows, and needs no internet connection to use.
 - Every change is kept: it's still there after a browser refresh, and every time the app starts it shows every change made before.
 - One documented command resets the data to the sample data, to start again from scratch.
+- **Scale expectations**: The system should handle smoothly:
+  - Up to 200 organizations
+  - Up to 500 contacts
+  - Up to 200 deals (mix of open, won, and lost)
+  - Activities and timeline entries growing proportionally
+- **Performance**: Pages should load quickly (under 2 seconds), tables should sort and search responsively, and the pipeline board should update immediately when cards are dragged.
 - Not in the MVP: sign-in, user accounts or several users; a dark mode or a layout for phones; AI features; email, calendar or phone integrations; currencies other than US dollars; reports beyond the dashboard; tags or custom fields; changing the pipeline stages; importing or exporting data.
 
 ## Success criteria
@@ -59,7 +71,12 @@ The look follows Accountable's brand guidelines, which take priority over any ge
 7. Every screen is sharp, modern and professional, and follows the brand. The dashboard is visually stunning, with a line chart, a bar chart and a visual of the pipeline.
 8. Before it's called done, someone has used it end to end in a real browser, the way a salesperson would: every section and every action above, each screen checked by eye, with no errors in the browser's console. Passing tests is necessary, but it isn't enough.
 
+## Timeline and priorities
+
+No fixed deadline. Quality and completeness take priority over speed. Build incrementally, test thoroughly, and ensure every feature works end-to-end before moving to the next. The success criteria define done - particularly criterion 8 about real-world testing with no console errors.
+
 ## Open questions
 
 - Sign-in, several people sharing the same data, and a record of who did what are for a later intent.
 - Making Accountable available to people beyond the computer it runs on is for later too.
+- Accessibility compliance (WCAG) is not explicitly required for the MVP, but follow standard best practices: semantic HTML, keyboard navigation, reasonable color contrast per the brand guidelines.

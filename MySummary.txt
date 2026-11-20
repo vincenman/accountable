@@ -42,8 +42,10 @@ and fix any material or unexpected differences. And show me the scrren show
 
 git commit -m "Test: check command"
 
-
+Deploy (Merge to branch)
 REVIEW
 Review this branch against main with docs/REVIEW.md . Report only , skip style.
+
+Maintain
 
 
